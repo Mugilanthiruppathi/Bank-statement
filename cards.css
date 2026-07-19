@@ -1,0 +1,50 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, Helvetica, sans-serif;
+}
+body{
+    background:#0f172a;
+}
+.credit-card{
+    height:230px;
+    border-radius:20px;
+    padding:25px;
+    color:white;
+    background:linear-gradient(135deg,#2563eb,#38bdf8);
+    transition:.3s;
+}
+.credit-card:hover{
+    transform:translateY(-10px);
+}
+.second{
+    background:linear-gradient(135deg,#7c3aed,#c084fc);
+}
+.top{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+.chip{
+    width:70px;
+    height:50px;
+    border-radius:10px;
+    margin-top:30px;
+    background:gold;
+}
+.number{
+    margin:30px 0;
+    letter-spacing:3px;
+}
+.bottom{
+    display:flex;
+    justify-content:space-between;
+}
+small{
+    color:#ddd;
+}
+.btn{
+    border-radius:10px;
+    font-weight:bold;
+}

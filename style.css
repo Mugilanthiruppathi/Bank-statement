@@ -1,0 +1,186 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial,Helvetica,sans-serif;
+}
+body{
+    background:#0f172a;
+    color:#fff;
+    overflow-x:hidden;
+}
+.wrapper{
+    display:flex;
+}
+.sidebar{
+    width:260px;
+    min-height:100vh;
+    background:#1e293b;
+    position:fixed;
+    left:0;
+    top:0;
+    padding:25px 15px;
+    overflow-y:auto;
+}
+.logo{
+    text-align:center;
+    margin-bottom:30px;
+}
+.logo h2{
+    color:#38bdf8;
+    font-weight:bold;
+}
+.sidebar .nav-link{
+    color:#cbd5e1;
+    padding:14px 18px;
+    border-radius:12px;
+    margin-bottom:10px;
+    display:flex;
+    align-items:center;
+    transition:.3s;
+}
+.sidebar .nav-link i{
+    font-size:20px;
+    margin-right:15px;
+}
+.sidebar .nav-link:hover,
+.sidebar .nav-link.active{
+    background:#0ea5e9;
+    color:#fff;
+}
+.main{
+    margin-left:260px;
+    width:calc(100% - 260px);
+}
+.navbar{
+    background:#1e293b;
+    padding:18px 30px;
+}
+.profile{
+    width:45px;
+    height:45px;
+    border-radius:50%;
+    border:2px solid #38bdf8;
+}
+.card{
+    border:none;
+    border-radius:18px;
+}
+.balance-card{
+    background:linear-gradient(135deg,#2563eb,#38bdf8);
+}
+.income-card{
+    background:linear-gradient(135deg,#16a34a,#4ade80);
+}
+.expense-card{
+    background:linear-gradient(135deg,#dc2626,#fb7185);
+}
+.balance-card,
+.income-card,
+.expense-card{
+    color:#fff;
+    transition:.3s;
+}
+.balance-card:hover,
+.income-card:hover,
+.expense-card:hover{
+    transform:translateY(-6px);
+}
+.card-body{
+    padding:28px;
+}
+.card-body h2{
+    margin:15px 0;
+    font-weight:bold;
+}
+.card-body p{
+    margin:0;
+}
+.table-card{
+    background:#1e293b;
+}
+.card-header{
+    background:#1e293b;
+    border:none;
+    color:#fff;
+    padding:20px;
+}
+.table{
+    margin:0;
+}
+.table th{
+    color:#38bdf8;
+}
+
+.table td,
+.table th{
+    padding:18px;
+}
+
+@media(max-width:992px){
+.sidebar{
+    width:80px;
+}
+.logo h2{
+    font-size:18px;
+}
+.sidebar .nav-link{
+    justify-content:center;
+    padding:15px;
+}
+.sidebar .nav-link span{
+    display:none;
+}
+.sidebar .nav-link i{
+    margin-right:0;
+    font-size:22px;
+}
+.main{
+    margin-left:80px;
+    width:calc(100% - 80px);
+}
+
+}
+@media(max-width:575.98px){
+
+.sidebar{
+    width:70px;
+    padding:15px 8px;
+}
+.logo h2{
+    font-size:15px;
+}
+.sidebar .nav-link{
+    justify-content:center;
+    padding:14px;
+}
+.sidebar .nav-link span{
+    display:none;
+}
+.sidebar .nav-link i{
+    margin-right:0;
+    font-size:20px;
+}
+.main{
+    margin-left:70px;
+    width:calc(100% - 70px);
+}
+.navbar{
+    padding:15px;
+}
+.profile{
+    width:40px;
+    height:40px;
+}
+.card-body{
+    padding:18px;
+}
+.card-body h2{
+    font-size:28px;
+}
+.table th,
+.table td{
+    font-size:13px;
+    padding:12px;
+}
+}

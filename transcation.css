@@ -1,0 +1,14 @@
+body{
+    font-family:Arial, Helvetica, sans-serif;
+}
+.card{
+    border-radius:18px;
+}
+.table th,
+.table td{
+    padding:16px;
+    white-space:nowrap;
+}
+.btn{
+    border-radius:10px;
+}
